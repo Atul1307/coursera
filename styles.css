@@ -1,0 +1,59 @@
+h1 {
+  text-align: center;
+}
+section {
+  position: relative;
+}
+section > h2 {
+  position: absolute;
+  left: 70%;
+  bottom: 50%;
+}
+
+@media (min-width: 992px) {
+  section {
+    float: left;
+    border: 1px solid black;
+  }
+  .firstSection {
+    width: 33%;
+  }
+  .secondSection {
+    width: 33%;
+  }
+  .thirdSection {
+    width: 33%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
+    float: left;
+    border: 1px solid black;
+  }
+  .firstSection {
+    float: left;
+    width: 50%;
+  }
+  .secondSection {
+    float: right;
+    width: 50%;
+  }
+  .thirdSection {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  section {
+    float: left;
+    border: 1px solid black;
+  }
+  .firstSection {
+    width: 100%;
+  }
+  .secondSection {
+    width: 100%;
+  }
+  .thirdSection {
+    width: 100%;
+  }
+}
